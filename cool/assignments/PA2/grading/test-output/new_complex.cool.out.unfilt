@@ -1,0 +1,282 @@
+#name "./new_complex.cool"
+#1 CLASS
+#1 TYPEID Main
+#1 INHERITS
+#1 TYPEID IO
+#1 '{'
+#2 OBJECTID main
+#2 '('
+#2 ')'
+#2 ':'
+#2 TYPEID SELF_TYPE
+#2 '{'
+#3 '('
+#3 LET
+#3 ERROR "c"
+#3 ':'
+#3 TYPEID Complex
+#3 ASSIGN
+#3 '('
+#3 NEW
+#3 TYPEID Complex
+#3 ')'
+#3 '.'
+#3 OBJECTID init
+#3 '('
+#3 INT_CONST 1
+#3 ','
+#3 INT_CONST 1
+#3 ')'
+#3 IN
+#4 '{'
+#6 IF
+#6 ERROR "c"
+#6 '.'
+#6 OBJECTID reflect_X
+#6 '('
+#6 ')'
+#6 '='
+#6 ERROR "c"
+#6 '.'
+#6 OBJECTID reflect_0
+#6 '('
+#6 ')'
+#7 THEN
+#7 OBJECTID out_string
+#7 '('
+#8 STR_CONST "=)\n"
+#8 ')'
+#9 ELSE
+#9 OBJECTID out_string
+#9 '('
+#10 STR_CONST "=(\n"
+#10 ')'
+#11 FI
+#11 ';'
+#13 IF
+#13 ERROR "c"
+#13 '.'
+#13 OBJECTID reflect_X
+#13 '('
+#13 ')'
+#13 '.'
+#13 OBJECTID reflect_Y
+#13 '('
+#13 ')'
+#13 '.'
+#13 OBJECTID equal
+#13 '('
+#13 ERROR "c"
+#13 '.'
+#13 OBJECTID reflect_0
+#13 '('
+#13 ')'
+#13 ')'
+#14 THEN
+#14 OBJECTID out_string
+#14 '('
+#15 STR_CONST "=)\n"
+#15 ')'
+#16 ELSE
+#16 OBJECTID out_string
+#16 '('
+#17 STR_CONST "=(\n"
+#17 ')'
+#18 FI
+#18 ';'
+#19 '}'
+#20 ')'
+#21 '}'
+#21 ';'
+#22 '}'
+#22 ';'
+#24 CLASS
+#24 TYPEID Complex
+#24 INHERITS
+#24 TYPEID IO
+#24 '{'
+#25 ERROR "x"
+#25 ':'
+#25 TYPEID Int
+#25 ';'
+#26 ERROR "y"
+#26 ':'
+#26 TYPEID Int
+#26 ';'
+#28 OBJECTID init
+#28 '('
+#28 ERROR "a"
+#28 ':'
+#28 TYPEID Int
+#28 ','
+#28 ERROR "b"
+#28 ':'
+#28 TYPEID Int
+#28 ')'
+#28 ':'
+#28 TYPEID Complex
+#28 '{'
+#29 '{'
+#30 ERROR "x"
+#30 '='
+#30 ERROR "a"
+#30 ';'
+#31 ERROR "y"
+#31 '='
+#31 ERROR "b"
+#31 ';'
+#32 OBJECTID self
+#32 ';'
+#33 '}'
+#34 '}'
+#34 ';'
+#36 OBJECTID print
+#36 '('
+#36 ')'
+#36 ':'
+#36 TYPEID Object
+#36 '{'
+#37 IF
+#37 ERROR "y"
+#37 '='
+#37 INT_CONST 0
+#38 THEN
+#38 OBJECTID out_int
+#38 '('
+#38 ERROR "x"
+#38 ')'
+#39 ELSE
+#39 OBJECTID out_int
+#39 '('
+#39 ERROR "x"
+#39 ')'
+#39 '.'
+#39 OBJECTID out_string
+#39 '('
+#39 STR_CONST "+"
+#39 ')'
+#39 '.'
+#39 OBJECTID out_int
+#39 '('
+#39 ERROR "y"
+#39 ')'
+#39 '.'
+#39 OBJECTID out_string
+#39 '('
+#39 STR_CONST "I"
+#39 ')'
+#40 FI
+#41 '}'
+#41 ';'
+#43 OBJECTID reflect_0
+#43 '('
+#43 ')'
+#43 ':'
+#43 TYPEID Complex
+#43 '{'
+#44 '{'
+#45 ERROR "x"
+#45 '='
+#45 '~'
+#45 ERROR "x"
+#45 ';'
+#46 ERROR "y"
+#46 '='
+#46 '~'
+#46 ERROR "y"
+#46 ';'
+#47 OBJECTID self
+#47 ';'
+#48 '}'
+#49 '}'
+#49 ';'
+#51 OBJECTID reflect_X
+#51 '('
+#51 ')'
+#51 ':'
+#51 TYPEID Complex
+#51 '{'
+#52 '{'
+#53 ERROR "y"
+#53 '='
+#53 '~'
+#53 ERROR "y"
+#53 ';'
+#54 OBJECTID self
+#54 ';'
+#55 '}'
+#56 '}'
+#56 ';'
+#58 OBJECTID reflect_Y
+#58 '('
+#58 ')'
+#58 ':'
+#58 TYPEID Complex
+#58 '{'
+#59 '{'
+#60 ERROR "x"
+#60 '='
+#60 '~'
+#60 ERROR "x"
+#60 ';'
+#61 OBJECTID self
+#61 ';'
+#62 '}'
+#63 '}'
+#63 ';'
+#65 OBJECTID equal
+#65 '('
+#65 ERROR "d"
+#65 ':'
+#65 TYPEID Complex
+#65 ')'
+#65 ':'
+#65 TYPEID Bool
+#65 '{'
+#66 IF
+#66 ERROR "x"
+#66 '='
+#66 ERROR "d"
+#66 '.'
+#66 OBJECTID x_value
+#66 '('
+#66 ')'
+#67 THEN
+#68 IF
+#68 ERROR "y"
+#68 '='
+#68 ERROR "d"
+#68 '.'
+#68 OBJECTID y_value
+#68 '('
+#68 ')'
+#69 THEN
+#69 BOOL_CONST true
+#70 ELSE
+#70 BOOL_CONST false
+#71 FI
+#72 ELSE
+#72 BOOL_CONST false
+#73 FI
+#74 '}'
+#74 ';'
+#76 OBJECTID x_value
+#76 '('
+#76 ')'
+#76 ':'
+#76 TYPEID Int
+#76 '{'
+#77 ERROR "x"
+#78 '}'
+#78 ';'
+#80 OBJECTID y_value
+#80 '('
+#80 ')'
+#80 ':'
+#80 TYPEID Int
+#80 '{'
+#81 ERROR "y"
+#82 '}'
+#82 ';'
+#83 '}'
+#83 ';'

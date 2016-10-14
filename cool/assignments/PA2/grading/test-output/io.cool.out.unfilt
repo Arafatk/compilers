@@ -1,0 +1,144 @@
+#name "./io.cool"
+#49 CLASS
+#49 ERROR "A"
+#49 '{'
+#53 OBJECTID io
+#53 ':'
+#53 TYPEID IO
+#53 ASSIGN
+#53 NEW
+#53 TYPEID IO
+#53 ';'
+#55 OBJECTID out_a
+#55 '('
+#55 ')'
+#55 ':'
+#55 TYPEID Object
+#55 '{'
+#55 OBJECTID io
+#55 '.'
+#55 OBJECTID out_string
+#55 '('
+#56 STR_CONST "A: Hello world\n"
+#56 ')'
+#56 '}'
+#56 ';'
+#58 '}'
+#58 ';'
+#61 CLASS
+#61 ERROR "B"
+#61 INHERITS
+#61 ERROR "A"
+#61 '{'
+#65 OBJECTID out_b
+#65 '('
+#65 ')'
+#65 ':'
+#65 TYPEID Object
+#65 '{'
+#65 OBJECTID io
+#65 '.'
+#65 OBJECTID out_string
+#65 '('
+#66 STR_CONST "B: Hello world\n"
+#66 ')'
+#66 '}'
+#66 ';'
+#68 '}'
+#68 ';'
+#71 CLASS
+#71 ERROR "C"
+#71 INHERITS
+#71 TYPEID IO
+#71 '{'
+#75 OBJECTID out_c
+#75 '('
+#75 ')'
+#75 ':'
+#75 TYPEID Object
+#75 '{'
+#75 OBJECTID out_string
+#75 '('
+#76 STR_CONST "C: Hello world\n"
+#76 ')'
+#76 '}'
+#76 ';'
+#80 '}'
+#80 ';'
+#83 CLASS
+#83 ERROR "D"
+#83 INHERITS
+#83 ERROR "C"
+#83 '{'
+#87 OBJECTID out_d
+#87 '('
+#87 ')'
+#87 ':'
+#87 TYPEID Object
+#87 '{'
+#87 OBJECTID out_string
+#87 '('
+#88 STR_CONST "D: Hello world\n"
+#88 ')'
+#88 '}'
+#88 ';'
+#90 '}'
+#90 ';'
+#93 CLASS
+#93 TYPEID Main
+#93 INHERITS
+#93 TYPEID IO
+#93 '{'
+#97 OBJECTID main
+#97 '('
+#97 ')'
+#97 ':'
+#97 TYPEID Object
+#97 '{'
+#98 '{'
+#99 '('
+#99 NEW
+#99 ERROR "A"
+#99 ')'
+#99 '.'
+#99 OBJECTID out_a
+#99 '('
+#99 ')'
+#99 ';'
+#100 '('
+#100 NEW
+#100 ERROR "B"
+#100 ')'
+#100 '.'
+#100 OBJECTID out_b
+#100 '('
+#100 ')'
+#100 ';'
+#101 '('
+#101 NEW
+#101 ERROR "C"
+#101 ')'
+#101 '.'
+#101 OBJECTID out_c
+#101 '('
+#101 ')'
+#101 ';'
+#102 '('
+#102 NEW
+#102 ERROR "D"
+#102 ')'
+#102 '.'
+#102 OBJECTID out_d
+#102 '('
+#102 ')'
+#102 ';'
+#103 OBJECTID out_string
+#103 '('
+#104 STR_CONST "Done.\n"
+#104 ')'
+#104 ';'
+#105 '}'
+#106 '}'
+#106 ';'
+#108 '}'
+#108 ';'

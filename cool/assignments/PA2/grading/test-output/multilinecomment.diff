@@ -1,0 +1,8 @@
+3c3
+< OBJECTID a
+---
+> ERROR "a"
+8c8
+< OBJECTID a
+---
+> ERROR "a"

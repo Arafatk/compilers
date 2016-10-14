@@ -1,0 +1,11 @@
+NOT
+IN
+ERROR "a"
+OBJECTID comment
+'('
+'*'
+NOT
+ERROR "a"
+OBJECTID comment
+'*'
+')'

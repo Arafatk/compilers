@@ -1,0 +1,538 @@
+#name "./sort_list.cl.cool"
+#24 CLASS
+#24 TYPEID List
+#24 INHERITS
+#24 TYPEID IO
+#24 '{'
+#28 OBJECTID isNil
+#28 '('
+#28 ')'
+#28 ':'
+#28 TYPEID Bool
+#28 '{'
+#28 '{'
+#28 OBJECTID abort
+#28 '('
+#28 ')'
+#28 ';'
+#28 BOOL_CONST true
+#28 ';'
+#28 '}'
+#28 '}'
+#28 ';'
+#30 OBJECTID cons
+#30 '('
+#30 OBJECTID hd
+#30 ':'
+#30 TYPEID Int
+#30 ')'
+#30 ':'
+#30 TYPEID Cons
+#30 '{'
+#31 '('
+#31 LET
+#31 OBJECTID new_cell
+#31 ':'
+#31 TYPEID Cons
+#31 ASSIGN
+#31 NEW
+#31 TYPEID Cons
+#31 IN
+#32 OBJECTID new_cell
+#32 '.'
+#32 OBJECTID init
+#32 '('
+#32 OBJECTID hd
+#32 ','
+#32 OBJECTID self
+#32 ')'
+#33 ')'
+#34 '}'
+#34 ';'
+#41 OBJECTID car
+#41 '('
+#41 ')'
+#41 ':'
+#41 TYPEID Int
+#41 '{'
+#41 '{'
+#41 OBJECTID abort
+#41 '('
+#41 ')'
+#41 ';'
+#41 NEW
+#41 TYPEID Int
+#41 ';'
+#41 '}'
+#41 '}'
+#41 ';'
+#43 OBJECTID cdr
+#43 '('
+#43 ')'
+#43 ':'
+#43 TYPEID List
+#43 '{'
+#43 '{'
+#43 OBJECTID abort
+#43 '('
+#43 ')'
+#43 ';'
+#43 NEW
+#43 TYPEID List
+#43 ';'
+#43 '}'
+#43 '}'
+#43 ';'
+#45 OBJECTID rev
+#45 '('
+#45 ')'
+#45 ':'
+#45 TYPEID List
+#45 '{'
+#45 OBJECTID cdr
+#45 '('
+#45 ')'
+#45 '}'
+#45 ';'
+#47 OBJECTID sort
+#47 '('
+#47 ')'
+#47 ':'
+#47 TYPEID List
+#47 '{'
+#47 OBJECTID cdr
+#47 '('
+#47 ')'
+#47 '}'
+#47 ';'
+#49 OBJECTID insert
+#49 '('
+#49 ERROR "i"
+#49 ':'
+#49 TYPEID Int
+#49 ')'
+#49 ':'
+#49 TYPEID List
+#49 '{'
+#49 OBJECTID cdr
+#49 '('
+#49 ')'
+#49 '}'
+#49 ';'
+#51 OBJECTID rcons
+#51 '('
+#51 ERROR "i"
+#51 ':'
+#51 TYPEID Int
+#51 ')'
+#51 ':'
+#51 TYPEID List
+#51 '{'
+#51 OBJECTID cdr
+#51 '('
+#51 ')'
+#51 '}'
+#51 ';'
+#53 OBJECTID print_list
+#53 '('
+#53 ')'
+#53 ':'
+#53 TYPEID Object
+#53 '{'
+#53 OBJECTID abort
+#53 '('
+#53 ')'
+#53 '}'
+#53 ';'
+#54 '}'
+#54 ';'
+#56 CLASS
+#56 TYPEID Cons
+#56 INHERITS
+#56 TYPEID List
+#56 '{'
+#57 OBJECTID xcar
+#57 ':'
+#57 TYPEID Int
+#57 ';'
+#58 OBJECTID xcdr
+#58 ':'
+#58 TYPEID List
+#58 ';'
+#62 OBJECTID isNil
+#62 '('
+#62 ')'
+#62 ':'
+#62 TYPEID Bool
+#62 '{'
+#62 BOOL_CONST false
+#62 '}'
+#62 ';'
+#64 OBJECTID init
+#64 '('
+#64 OBJECTID hd
+#64 ':'
+#64 TYPEID Int
+#64 ','
+#64 OBJECTID tl
+#64 ':'
+#64 TYPEID List
+#64 ')'
+#64 ':'
+#64 TYPEID Cons
+#64 '{'
+#65 '{'
+#66 OBJECTID xcar
+#66 ASSIGN
+#66 OBJECTID hd
+#66 ';'
+#67 OBJECTID xcdr
+#67 ASSIGN
+#67 OBJECTID tl
+#67 ';'
+#68 OBJECTID self
+#68 ';'
+#69 '}'
+#70 '}'
+#70 ';'
+#72 OBJECTID car
+#72 '('
+#72 ')'
+#72 ':'
+#72 TYPEID Int
+#72 '{'
+#72 OBJECTID xcar
+#72 '}'
+#72 ';'
+#74 OBJECTID cdr
+#74 '('
+#74 ')'
+#74 ':'
+#74 TYPEID List
+#74 '{'
+#74 OBJECTID xcdr
+#74 '}'
+#74 ';'
+#76 OBJECTID rev
+#76 '('
+#76 ')'
+#76 ':'
+#76 TYPEID List
+#76 '{'
+#76 '('
+#76 OBJECTID xcdr
+#76 '.'
+#76 OBJECTID rev
+#76 '('
+#76 ')'
+#76 ')'
+#76 '.'
+#76 OBJECTID rcons
+#76 '('
+#76 OBJECTID xcar
+#76 ')'
+#76 '}'
+#76 ';'
+#78 OBJECTID sort
+#78 '('
+#78 ')'
+#78 ':'
+#78 TYPEID List
+#78 '{'
+#78 '('
+#78 OBJECTID xcdr
+#78 '.'
+#78 OBJECTID sort
+#78 '('
+#78 ')'
+#78 ')'
+#78 '.'
+#78 OBJECTID insert
+#78 '('
+#78 OBJECTID xcar
+#78 ')'
+#78 '}'
+#78 ';'
+#80 OBJECTID insert
+#80 '('
+#80 ERROR "i"
+#80 ':'
+#80 TYPEID Int
+#80 ')'
+#80 ':'
+#80 TYPEID List
+#80 '{'
+#81 IF
+#81 ERROR "i"
+#81 '<'
+#81 OBJECTID xcar
+#81 THEN
+#82 '('
+#82 NEW
+#82 TYPEID Cons
+#82 ')'
+#82 '.'
+#82 OBJECTID init
+#82 '('
+#82 ERROR "i"
+#82 ','
+#82 OBJECTID self
+#82 ')'
+#83 ELSE
+#84 '('
+#84 NEW
+#84 TYPEID Cons
+#84 ')'
+#84 '.'
+#84 OBJECTID init
+#84 '('
+#84 OBJECTID xcar
+#84 ','
+#84 OBJECTID xcdr
+#84 '.'
+#84 OBJECTID insert
+#84 '('
+#84 ERROR "i"
+#84 ')'
+#84 ')'
+#85 FI
+#86 '}'
+#86 ';'
+#89 OBJECTID rcons
+#89 '('
+#89 ERROR "i"
+#89 ':'
+#89 TYPEID Int
+#89 ')'
+#89 ':'
+#89 TYPEID List
+#89 '{'
+#89 '('
+#89 NEW
+#89 TYPEID Cons
+#89 ')'
+#89 '.'
+#89 OBJECTID init
+#89 '('
+#89 OBJECTID xcar
+#89 ','
+#89 OBJECTID xcdr
+#89 '.'
+#89 OBJECTID rcons
+#89 '('
+#89 ERROR "i"
+#89 ')'
+#89 ')'
+#89 '}'
+#89 ';'
+#91 OBJECTID print_list
+#91 '('
+#91 ')'
+#91 ':'
+#91 TYPEID Object
+#91 '{'
+#92 '{'
+#93 OBJECTID out_int
+#93 '('
+#93 OBJECTID xcar
+#93 ')'
+#93 ';'
+#94 OBJECTID out_string
+#94 '('
+#95 STR_CONST "\n"
+#95 ')'
+#95 ';'
+#96 OBJECTID xcdr
+#96 '.'
+#96 OBJECTID print_list
+#96 '('
+#96 ')'
+#96 ';'
+#97 '}'
+#98 '}'
+#98 ';'
+#99 '}'
+#99 ';'
+#101 CLASS
+#101 TYPEID Nil
+#101 INHERITS
+#101 TYPEID List
+#101 '{'
+#102 OBJECTID isNil
+#102 '('
+#102 ')'
+#102 ':'
+#102 TYPEID Bool
+#102 '{'
+#102 BOOL_CONST true
+#102 '}'
+#102 ';'
+#104 OBJECTID rev
+#104 '('
+#104 ')'
+#104 ':'
+#104 TYPEID List
+#104 '{'
+#104 OBJECTID self
+#104 '}'
+#104 ';'
+#106 OBJECTID sort
+#106 '('
+#106 ')'
+#106 ':'
+#106 TYPEID List
+#106 '{'
+#106 OBJECTID self
+#106 '}'
+#106 ';'
+#108 OBJECTID insert
+#108 '('
+#108 ERROR "i"
+#108 ':'
+#108 TYPEID Int
+#108 ')'
+#108 ':'
+#108 TYPEID List
+#108 '{'
+#108 OBJECTID rcons
+#108 '('
+#108 ERROR "i"
+#108 ')'
+#108 '}'
+#108 ';'
+#110 OBJECTID rcons
+#110 '('
+#110 ERROR "i"
+#110 ':'
+#110 TYPEID Int
+#110 ')'
+#110 ':'
+#110 TYPEID List
+#110 '{'
+#110 '('
+#110 NEW
+#110 TYPEID Cons
+#110 ')'
+#110 '.'
+#110 OBJECTID init
+#110 '('
+#110 ERROR "i"
+#110 ','
+#110 OBJECTID self
+#110 ')'
+#110 '}'
+#110 ';'
+#112 OBJECTID print_list
+#112 '('
+#112 ')'
+#112 ':'
+#112 TYPEID Object
+#112 '{'
+#112 BOOL_CONST true
+#112 '}'
+#112 ';'
+#114 '}'
+#114 ';'
+#117 CLASS
+#117 TYPEID Main
+#117 INHERITS
+#117 TYPEID IO
+#117 '{'
+#119 ERROR "l"
+#119 ':'
+#119 TYPEID List
+#119 ';'
+#122 OBJECTID iota
+#122 '('
+#122 ERROR "i"
+#122 ':'
+#122 TYPEID Int
+#122 ')'
+#122 ':'
+#122 TYPEID List
+#122 '{'
+#123 '{'
+#124 ERROR "l"
+#124 ASSIGN
+#124 NEW
+#124 TYPEID Nil
+#124 ';'
+#125 '('
+#125 LET
+#125 ERROR "j"
+#125 ':'
+#125 TYPEID Int
+#125 ASSIGN
+#125 INT_CONST 0
+#125 IN
+#126 WHILE
+#126 ERROR "j"
+#126 '<'
+#126 ERROR "i"
+#127 LOOP
+#128 '{'
+#129 ERROR "l"
+#129 ASSIGN
+#129 '('
+#129 NEW
+#129 TYPEID Cons
+#129 ')'
+#129 '.'
+#129 OBJECTID init
+#129 '('
+#129 ERROR "j"
+#129 ','
+#129 ERROR "l"
+#129 ')'
+#129 ';'
+#130 ERROR "j"
+#130 ASSIGN
+#130 ERROR "j"
+#130 '+'
+#130 INT_CONST 1
+#130 ';'
+#131 '}'
+#132 POOL
+#133 ')'
+#133 ';'
+#134 ERROR "l"
+#134 ';'
+#135 '}'
+#136 '}'
+#136 ';'
+#138 OBJECTID main
+#138 '('
+#138 ')'
+#138 ':'
+#138 TYPEID Object
+#138 '{'
+#139 '{'
+#140 OBJECTID out_string
+#140 '('
+#140 STR_CONST "How many numbers to sort?"
+#140 ')'
+#140 ';'
+#141 OBJECTID iota
+#141 '('
+#141 OBJECTID in_int
+#141 '('
+#141 ')'
+#141 ')'
+#141 '.'
+#141 OBJECTID rev
+#141 '('
+#141 ')'
+#141 '.'
+#141 OBJECTID sort
+#141 '('
+#141 ')'
+#141 '.'
+#141 OBJECTID print_list
+#141 '('
+#141 ')'
+#141 ';'
+#142 '}'
+#143 '}'
+#143 ';'
+#144 '}'
+#144 ';'
